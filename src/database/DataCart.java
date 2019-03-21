@@ -5,7 +5,9 @@ import entities.Cart;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class DataCart {
@@ -88,16 +90,19 @@ public class DataCart {
 
     // add cart
     public void insertTransaksi(Cart cart, String kodetrans){
+        Date dNow = new Date( );
+        SimpleDateFormat ft = new SimpleDateFormat ("yyyy-mm-dd");
 
         try {
 
             // prepare statement query, (menghindari sql injection)
-            pst = conn.prepareStatement("INSERT INTO tb_transaksi (id_buku, jumlah, total_harga, no_penjualan) " +
-                    "VALUE (?, ?, ?, ?)");
+            pst = conn.prepareStatement("INSERT INTO tb_transaksi (id_buku, jumlah, total_harga, no_penjualan, tgl_transaksi) " +
+                    "VALUE (?, ?, ?, ?, ?)");
             pst.setInt(1, cart.getId_buku());
             pst.setInt(2, cart.getQty());
             pst.setInt(3, cart.getTotal_harga());
             pst.setString(4, kodetrans);
+            pst.setDate(5, java.sql.Date.valueOf(ft.format(dNow)));
             // simpan siswa
             pst.execute();
 

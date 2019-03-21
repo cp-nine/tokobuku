@@ -16,17 +16,15 @@ public class BukuController extends BorderPading {
 
         int no = 1; // create list number
 
-        border(46); // create horizontal border table
+        border(31); // create horizontal border table
         System.out.println("| " + padRight("No", 5)
                 + "| " + padRight("Kode", 8)
                 + "| " + padRight("Judul Book", 20)
-                + "| " + padRight("Penulis", 15)
-                + "| " + padRight("Penerbit", 10)
                 + "| " + padRight("Harga", 13)
                 + "| " + padRight("Stok", 5)
                 + " |"
         );
-        border(46);
+        border(31);
 //-----------------------------------------
         // looping data to print all list, referrece of ServiceBook
         for (Buku lbk : bukuDao.getAll()) {
@@ -34,8 +32,6 @@ public class BukuController extends BorderPading {
             System.out.println("| " + padRight("" + no + "", 5)
                     + "| " + padRight(lbk.getKode_buku(), 8)
                     + "| " + padRight(lbk.getJudul(), 20)
-                    + "| " + padRight(lbk.getPenulis(), 15)
-                    + "| " + padRight(lbk.getPenerbit(), 10)
                     + "| Rp." + padRight(String.valueOf(lbk.getHarga()), 10)
                     + "| " + padRight(String.valueOf(lbk.getStok()), 5)
                     + " |"
@@ -44,7 +40,7 @@ public class BukuController extends BorderPading {
             no++;
         }
 //-----------------------------------------
-        border(46);
+        border(31);
 
     }
 

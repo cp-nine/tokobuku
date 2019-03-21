@@ -1,3 +1,8 @@
+import java.text.SimpleDateFormat;
+import java.time.Instant;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -5,9 +10,9 @@ public class ValidasiString {
 
     public static void main(String[] args) {
 
-        String text = "())";
-
-        cekString(text);
+//        String text = "(())";
+//
+//        cekString(text);
 
     }
 

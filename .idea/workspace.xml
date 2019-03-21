@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d31a48cc-a0bc-4adc-9398-16f35197c8f3" name="Default Changelist" comment="" />
+    <list default="true" id="d31a48cc-a0bc-4adc-9398-16f35197c8f3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javamysql/ValidasiString.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javamysql/ValidasiString.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javamysql/controller/BukuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javamysql/controller/BukuController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javamysql/controller/CartController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javamysql/controller/CartController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javamysql/database/DataCart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javamysql/database/DataCart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ValidasiString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ValidasiString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/BukuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/BukuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/CartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/DataCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/DataCart.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,23 +67,23 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="48" />
+          <entry key="java" value="55" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="48" />
+          <entry key="JAVA" value="55" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="37" />
-          <entry key="java" value="5186" />
+          <entry key="java" value="5548" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5183" />
+          <entry key="JAVA" value="5545" />
           <entry key="PLAIN_TEXT" value="37" />
           <entry key="SQL" value="3" />
         </counts>
@@ -82,10 +93,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ValidasiString.java">
+        <entry file="file://$PROJECT_DIR$/src/MainApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
-              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+            <state relative-caret-position="4980">
+              <caret line="251" column="54" lean-forward="true" selection-start-line="251" selection-start-column="54" selection-end-line="251" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -135,13 +146,13 @@
         <option value="$PROJECT_DIR$/src/dao/BukuDao.java" />
         <option value="$PROJECT_DIR$/src/dao/impl/BukuDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/database/DataBuku.java" />
-        <option value="$PROJECT_DIR$/src/controller/BukuController.java" />
         <option value="$PROJECT_DIR$/src/config/Values.java" />
         <option value="$PROJECT_DIR$/src/dao/impl/CartDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/MainApp.java" />
-        <option value="$PROJECT_DIR$/src/controller/CartController.java" />
         <option value="$PROJECT_DIR$/src/database/DataCart.java" />
+        <option value="$PROJECT_DIR$/src/controller/CartController.java" />
+        <option value="$PROJECT_DIR$/src/controller/BukuController.java" />
         <option value="$PROJECT_DIR$/src/ValidasiString.java" />
+        <option value="$PROJECT_DIR$/src/MainApp.java" />
       </list>
     </option>
   </component>
@@ -157,7 +168,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="15" />
     <option name="y" value="30" />
     <option name="width" value="1890" />
@@ -180,13 +191,12 @@
             <path>
               <item name="toko-buku" type="b2602c69:ProjectViewProjectNode" />
               <item name="toko-buku" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="toko-buku" type="b2602c69:ProjectViewProjectNode" />
               <item name="toko-buku" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="toko-buku" type="b2602c69:ProjectViewProjectNode" />
@@ -233,7 +243,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553169861708" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553174628809" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -254,7 +264,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ValidasiString">
+  <component name="RunManager" selected="Application.MainApp">
     <configuration name="JavaCrud" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="JavaCrud" />
       <module name="javamysql" />
@@ -283,8 +293,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ValidasiString" />
         <item itemvalue="Application.MainApp" />
+        <item itemvalue="Application.ValidasiString" />
         <item itemvalue="Application.JavaCrud" />
       </list>
     </recent_temporary>
@@ -303,17 +313,18 @@
       <workItem from="1552968306121" duration="47432000" />
       <workItem from="1553041515693" duration="1908000" />
       <workItem from="1553089299899" duration="16085000" />
-      <workItem from="1553135902368" duration="25190000" />
+      <workItem from="1553135902368" duration="29041000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91012000" />
+    <option name="totallyTimeSpent" value="94863000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2388664" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2388664" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -323,13 +334,13 @@
       <window_info anchor="bottom" id="Messages" order="0" weight="0.3291815" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.3291815" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.39679715" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.97330964" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.66903913" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3291815" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3291815" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -463,18 +474,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/BukuController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="82" column="5" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2501#2502#0" expanded="true" />
-            <element signature="e#2541#2542#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/config/Values.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -530,6 +529,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/CartController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="73" column="10" selection-start-line="73" selection-start-column="10" selection-end-line="73" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/CartDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -537,17 +546,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/DataCart.java">
+    <entry file="file://$PROJECT_DIR$/src/controller/BukuController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+        <state relative-caret-position="40">
+          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/CartController.java">
+    <entry file="file://$PROJECT_DIR$/src/database/DataCart.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="59" column="8" lean-forward="true" selection-start-line="59" selection-start-column="8" selection-end-line="61" selection-end-column="9" />
+        <state relative-caret-position="-1126">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ValidasiString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -556,18 +575,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MainApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="84" column="17" lean-forward="true" selection-start-line="84" selection-start-column="17" selection-end-line="84" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ValidasiString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        <state relative-caret-position="4980">
+          <caret line="251" column="54" lean-forward="true" selection-start-line="251" selection-start-column="54" selection-end-line="251" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

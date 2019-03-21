@@ -68,6 +68,11 @@ public class CartController extends BorderPading {
 //-----------------------------------------
 //  Head of table
         border(45);
+        System.out.println("| " + padRight("Kode Transaksi", 15)
+                + "| " + padRight(kodePenjualan, 73)
+                + " |"
+        );
+        border(45);
         System.out.println("| " + padRight("No", 5)
                 + "| " + padRight("Produk", 40)
                 + "| " + padRight("Qty", 5)

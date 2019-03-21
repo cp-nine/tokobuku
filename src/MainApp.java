@@ -59,12 +59,28 @@ public class MainApp {
                             System.out.println();
                             System.out.print("Masukan Kode Buku : ");
                             String kodeHapus = input.readLine();
-                            deleteBuku(kodeHapus);
+                            System.out.print("Apakah anda yakin akan menghapus buku ini ? (y/n) : ");
+                            String confirm = input.readLine();
+                            if(confirm=="y"){
+                                deleteBuku(kodeHapus);
+                            } else if(confirm=="n"){
+                                System.out.println("Kembali ke mnu utama!!");
+                            } else {
+                                System.out.println("Inputan salah, hapu buku gagal..!!!");
+                            }
                         } else if (menuSelect == 5) {
                             System.out.println();
                             System.out.print("Masukan Kode Buku : ");
                             String kodeRestore = input.readLine();
-                            restoreBuku(kodeRestore);
+                            System.out.print("Apakah anda yakin akan merestore buku ini ? (y/n) : ");
+                            String confirm = input.readLine();
+                            if(confirm=="y"){
+                                restoreBuku(kodeRestore);
+                            } else if(confirm=="n"){
+                                System.out.println("Kembali ke mnu utama!!");
+                            } else {
+                                System.out.println("Inputan salah, restore buku gagal..!!!");
+                            }
                         } else if (menuSelect == 6) {
                             System.out.println("Lakukan Transaksi ");
                             addTransaksi();
@@ -233,8 +249,8 @@ public class MainApp {
                     keluar = true;
                 }
             } catch (Exception e) {
-//                System.out.println("Inputan salah..");
-                e.printStackTrace();
+                System.out.println("Inputan salah..");
+//                e.printStackTrace();
             }
 
         } while (!keluar);
