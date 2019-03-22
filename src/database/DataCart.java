@@ -26,7 +26,10 @@ public class DataCart {
 
         try {
 
-            pst = conn.prepareStatement("SELECT * FROM tb_transaksi");
+            pst = conn.prepareStatement("select no_penjualan, sum(jumlah) AS jml_transaksi, " +
+                    "sum(total_harga)AS total_transaksi, tgl_transaksi from tb_transaksi " +
+                    "group by no_penjualan");
+//            pst = conn.prepareStatement("SELECT * FROM tb_transaksi");
             rs = pst.executeQuery();
 
             if(!rs.wasNull()){
@@ -34,11 +37,10 @@ public class DataCart {
                 while (rs.next()){
                     Cart trx = new Cart();
 
-                    trx.setId_transaksi(rs.getInt("id_transaksi"));
-                    trx.setId_buku(rs.getInt("id_buku"));
-                    trx.setQty(rs.getInt("jumlah"));
-                    trx.setTotal_harga(rs.getInt("total_harga"));
                     trx.setNo_transaksi(rs.getString("no_penjualan"));
+                    trx.setQty(rs.getInt("jml_transaksi"));
+                    trx.setTotal_harga(rs.getInt("total_transaksi"));
+                    trx.setTgl_transaksi(rs.getString("tgl_transaksi"));
                     list.add(trx);
                 }
             } else {

@@ -6,6 +6,7 @@ public class Cart {
     private Integer qty;
     private Integer total_harga;
     private String no_transaksi;
+    private String tgl_transaksi;
 
     public Integer getId_transaksi() {
         return id_transaksi;
@@ -47,4 +48,11 @@ public class Cart {
         this.no_transaksi = no_transaksi;
     }
 
+    public String getTgl_transaksi() {
+        return tgl_transaksi;
+    }
+
+    public void setTgl_transaksi(String tgl_transaksi) {
+        this.tgl_transaksi = tgl_transaksi;
+    }
 }

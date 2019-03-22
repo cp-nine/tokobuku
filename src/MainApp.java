@@ -86,7 +86,7 @@ public class MainApp {
                             addTransaksi();
                         } else if (menuSelect == 7) {
                             System.out.println("Data Transaksi");
-                            cartController.allTransaksi();
+                            transaksi();
                         }
 
                         System.out.print("Ketik 8 untuk keluar, ketik 0 untuk ke menu utama : ");
@@ -264,6 +264,21 @@ public class MainApp {
             cartController.getInvoice(kode_trans);
         } else {
             System.out.println("Terimakasih atas kunjungan anda.");
+        }
+
+    }
+
+    static void transaksi(){
+
+        cartController.allTransaksi();
+        try {
+
+            System.out.print("Masukan kode transaksi untuk melihat detail: ");
+            String kodeTransaksi = input.readLine();
+            cartController.getInvoice(kodeTransaksi);
+
+        } catch (Exception e){
+            System.out.println("Transaksi tidak di temukan");
         }
 
     }
