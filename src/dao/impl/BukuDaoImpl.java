@@ -68,4 +68,9 @@ public class BukuDaoImpl implements BukuDao {
         dataBuku.restoreBuku(kode);
     }
 
+    @Override
+    public void editStok(String kode, int jumlah) {
+        dataBuku.updateStok(kode, jumlah);
+    }
+
 }

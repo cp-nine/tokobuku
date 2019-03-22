@@ -16,4 +16,6 @@ public interface BukuDao {
     void deleteBuku(String kode);
     void restoreBuku(String kode);
 
+    void editStok(String kode, int jumlah);
+
 }

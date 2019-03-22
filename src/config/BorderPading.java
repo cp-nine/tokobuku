@@ -6,7 +6,7 @@ public class BorderPading {
     // function to create border horizontal
     public static void border(int n) {
         for (int i = 0; i < n; i++) {
-            System.out.print(" -");
+            System.out.print(" =");
         }
         System.out.println();
     }

@@ -143,7 +143,7 @@ public class DataBuku {
             System.out.println("Tambah buku berhasil");
 
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println("Tambah buku gagal");
         }
     }
 
@@ -158,8 +158,9 @@ public class DataBuku {
             // update
             pst.execute();
 
+            System.out.println("Update stok buku berhasil");
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println("Update stok buku berhasil");
         }
     }
 
@@ -179,8 +180,9 @@ public class DataBuku {
             // update
             pst.execute();
 
+            System.out.println("Update buku berhasil");
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println("Update buku gagal");
         }
     }
 
@@ -196,8 +198,9 @@ public class DataBuku {
             // update
             pst.execute();
 
+            System.out.println("Delete buku berhasil");
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println("Delete buku gagal");
         }
     }
 
@@ -213,8 +216,27 @@ public class DataBuku {
             // update
             pst.execute();
 
+            System.out.println("Restore berhasil");
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println("Restore gagal");
+        }
+    }
+
+    // restore buku
+    public void updateStok(String kodebuku, int jumlah){
+        try {
+
+            // prepare statement query, (menghindari sql injection)
+            pst = conn.prepareStatement("UPDATE tb_buku SET stock=? WHERE kode_buku=? ");
+            pst.setInt(1, 0);
+            pst.setString(2, kodebuku);
+
+            // update
+            pst.execute();
+
+            System.out.println("Update stok berhasil");
+        } catch (Exception e) {
+            System.out.println("Update stok gagal");
         }
     }
 
